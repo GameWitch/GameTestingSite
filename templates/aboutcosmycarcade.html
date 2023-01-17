@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ <! --a header image here -->
+<img src="{{ url_for('static', filename='images/screenshot00.jpg') }}">
+
+<h1>CosMyc Arcade or whatever</h1>
+
+<a href="{{url_for('play_cosmycarcade')}}">Play The Game here dawg</a>
+
+<h2>title</h2>
+<p> a blurb about the game</p>
+
+ <! -- maybe a slide show or gallery of images -->
+<img src="{{ url_for('static', filename='images/screenshot00.jpg') }}">
+
+<h2>title</h2>
+<p> a blurb about the game</p>
+
+<h2>title</h2>
+ <p> a blurb about the game</p>
+
+ <h2>Send me an email about this shit</h2>
+<form action=""
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br>
+    Message:<br>
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br>
+    <button type="submit" value="Submit">Send</button>
+</form>
+
+
+</body>
+</html>
