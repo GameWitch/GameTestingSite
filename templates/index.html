@@ -6,18 +6,25 @@
 </head>
 <body>
 
+<div>
  <! --some kind of header?-->
+ </div>
 
-
+<div>
  <p>A blurb about me/the games studio</p>
+</div>
 
-  <! -- this section as like a template for a list games -->
-<h1>CosMyc Arcade or whatever</h1>
- <img src="{{ url_for('static', filename='images/screenshot00.jpg') }}"><br><br>
-<a href="{{url_for('play_cosmycarcade')}}">Play The Game here dawg</a>
-<h2>title</h2>
-<p> a lil blurb about the game</p>
-<a href="{{url_for('about_cosmyc_arcade')}}">Learn more about the game here</a>
+  <! -- this section as like a template for a list of games -->
+     <div>
+        <h1>CosMyc Arcade or whatever</h1>
+         <img src="{{ url_for('static', filename='images/screenshot00.jpg') }}"><br><br>
+        <a href="{{url_for('play_cosmycarcade')}}">Play The Game here dawg</a>
+        <h2>title</h2>
+        <p> a lil blurb about the game</p>
+        <a href="{{url_for('about_cosmyc_arcade')}}">Learn more about the game here</a>
+    </div>
 
+  <! -- So the main page will just have a bunch of sections like that  -->
+  <! -- and i can just like, copy/paste stuff in in the future -->
 </body>
 </html>
