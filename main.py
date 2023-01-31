@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -10,6 +10,12 @@ def welcome():
 
 @app.route("/about_cosmyc_arcade", methods=["POST", "GET"])
 def about_cosmyc_arcade():
+    if request.method == "POST":
+        email_dict = request.form.to_dict()
+        #print(email_dict["Name"])
+        #print(email_dict["Email"])
+       # print(email_dict["Message"])
+
     return render_template("aboutcosmycarcade.html")
 
 
